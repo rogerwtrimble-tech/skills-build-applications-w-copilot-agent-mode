@@ -33,6 +33,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
       - name: Get response templates
         uses: actions/checkout@v6
         with:
